@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        const targetPages = [
+            '/red.html',
+            '/blue.html',
+            '/green.html'
+        ];        
+        const goToRandom = () => {
+            const randomPage = targetPages[Math.floor(Math.random() * targetPages.length)];
+            window.location.href = randomPage;
+        }
+        goToRandom();
+    </script>
+</head>
+<body>
+    <p>Hi, you shouldn't be here!</p>
+    <button onclick="goToRandom()">Click me to find a new team!</button>
+    <p>
+        Or manually choose a new team:
+        <ul>
+            <li><a href="/red.html">Red</a></li>
+            <li><a href="/green.html">Green</a></li>
+            <li><a href="/blue.html">Blue</a></li>
+        </ul>
+    </p>
+</body>
+</html>
