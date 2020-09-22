@@ -1,3 +1,21 @@
 body {
     margin: 1em;
 }
+
+.title {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#red-team {
+    color: red;
+}
+
+#green-team {
+    color: green;
+}
+
+#blue-team {
+    color: blue;
+}
